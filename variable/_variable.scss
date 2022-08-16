@@ -1,0 +1,40 @@
+// color
+$color-basic: #000000;
+
+// fz
+$text-16: 16px;
+$text-20: 20px;
+$text-24: 24px;
+$text-30: 30px;
+$text-40: 40px;
+
+
+/// font-wight
+$fw-200: 200;
+$fw-300: 300;
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+
+
+//color
+$color-Buy:#E1B067;
+$color-price:#DEDDDC;
+$color-bg:#F8F8F8;
+$color-1E1D1D : #1E1D1D;
+$color-f6f6: #f6f6f6;
+
+
+//bg
+$bc-basic:#f8f8f8;
+
+// mixin
+
+@mixin text($fz, $fw, $c) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+}
+// @mixin marginBtn(){
+//     margin: ;
+// }

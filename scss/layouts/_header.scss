@@ -1,0 +1,36 @@
+.header {
+    .container{
+        background-color: $bg-c-dark;
+        max-width:1280px;
+        margin: 0 auto;
+        .row{
+            align-items: center;
+            padding-left: 24px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 8px; 
+
+            .register {
+                align-items: center;
+                .shopping-cart{
+                    padding: 0 5px;
+                    align-items: center;
+                    span{
+                        font-size: $fs-header-big;
+                        color: $text-c-light;
+                        font-weight: $fw-light;
+                    }
+                }
+                a{
+                    color: $text-c-light;
+                    font-size: $fs-header;
+                    padding: 0 5px;
+                    font-weight: $fw-light;
+                }
+            }
+        }
+        
+    }
+
+
+}

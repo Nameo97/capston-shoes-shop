@@ -1,0 +1,12 @@
+@mixin TextFormatter ($color, $bg-color, $fs, $fw){
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin border-register ($width, $style, $color){
+    border-width: $width;
+    border-style: $style;
+    border-color: $color;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../css/register.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="brand-logo">
+            <img src="../img/image_3.png" alt="" />
+          </div>
+          <div class="register d-flex">
+            <div class="shopping-cart d-flex">
+              <img src="../img/image_8.png" />
+              <span>(1)</span>
+            </div>
+            <a href="#">Login</a>
+            <a href="#">Register</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="d-flex flex-row">
+          <li class="active"><a href="./index.html">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">Kid</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="register-form">
+      <div class="container">
+        <h1>Register</h1>
+        <div  class="form-group row">
+          <div class="col-12 col-lg-6 left">
+            <div class="text-box">
+              <div class="d-flex">
+                <span class="input-name">Email</span>
+                <input
+                  class="required"
+                  id="email"
+                  type="text"
+                  name="email"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoEmail text-danger"></p>
+            </div>
+            <div class="text-box ">
+              <div class="d-flex">
+                <span class="input-name">Password</span>
+                <input
+                  class="required"
+                  id="password"
+                  type="password"
+                  name="password"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoPassword text-danger"></p>
+            </div>
+            <div class="text-box">
+              <div class="d-flex">
+  
+                <span class="input-name">Confirm</span>
+                <input
+                  class="required"
+                  id="passwordConfirm"
+                  type="password"
+                  name="passwordConfirm"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoPasswordConfirm text-danger"></p>
+  
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 right">
+            <div class="text-box ">
+              <div class="d-flex">
+                <span class="input-name">Name</span>
+                <input
+                  class=" required"
+                  id="name"
+                  type="text"
+                  name="name"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoName text-danger"></p>
+            </div>
+            <div class="text-box">
+              <div class="d-flex">
+                <span class="input-name">Phone</span>
+                <input
+                  class="required"
+                  id="phone"
+                  type="number"
+                  name="phone"
+                />
+                <span class="required-field-alert">(*)</span>
+              </div>
+              <p id="thongBao" class="thongBaoPhone text-danger"></p>
+            </div>
+            <div class="gender-input d-flex ">
+              <span class="input-name">Gender</span>
+              <div class="wrapper">
+                <div class="check-radio">
+                  
+                  <input id="male"  class=" male radio" type="radio" name="gender"/>
+                  <label for="male" class="label">Male</label>
+                  <div class="root"></div>
+                </div>
+                <div class="check-radio">
+  
+                  <input id="female"  class=" female radio" type="radio" name="gender"/>
+                  <label for="female" class="label">Female</label>
+                  <div class="root"></div>
+                </div>
+                <p id="thongBao" class="thongBaoCheck text-danger"></p>
+              </div>
+  
+            </div>
+            <div></div>
+            <button class="btn-submit" id="btnSubmit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container" style="max-width:1280px; margin: 0 auto;">
+        <img style="width:100%; height:242px;" src="../img/image_7.png" alt="">
+      </div>  
+    </div>
+</footer>
+<a href="#" class="backToTop cd-top text-replace js-cd-top">
+  <i class="fa fa-angle-up"></i>
+</a>
+<script src="../assets/backToTopJS/util.js"></script>
+<script src="../assets/backToTopJS/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      document.querySelectorAll('.check-radio').forEach(check =>{
+        check.querySelector('.root').onclick = function() {
+        
+          check.querySelector('.radio').click();
+        }
+      })
+      
+      
+    </script>
+    <script src="../method/info.js"></script>
+    <script src="../method/validation.js"></script>
+    <script src="../controllers/register.js"></script>
+
+  </body>
+</html>

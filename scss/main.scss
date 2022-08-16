@@ -1,0 +1,14 @@
+@import "base/_reset.scss";
+@import "helper/_variables.scss";
+@import "helper/_mixin.scss";
+@import "helper/_extend.scss";
+@import "components/_button.scss";
+
+//layouts import
+@import "layouts/_header.scss";
+@import "layouts/nav";
+@import "layouts/carousel";
+@import "layouts/products";
+@import "layouts/footer";
+@import"./components/backToTop";
+

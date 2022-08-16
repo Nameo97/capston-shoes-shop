@@ -1,0 +1,42 @@
+nav {
+  .container {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+    ul {
+      align-items: center;
+      list-style-type: none;
+      li {
+        margin-right: 24px;
+        a {
+          @include TextFormatter($text-c-dark, $bg-c-none, $fs-nav, $fw-light);
+          text-decoration: none;
+        }
+        &:nth-child(5) {
+          margin-right: 0;
+        }
+      }
+      li.active {
+        a {
+          @include TextFormatter(
+            $text-c-dark,
+            $bg-c-none,
+            $fs-nav,
+            $fw-semi-bold
+          );
+          position: relative;
+          &::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background: #000;
+            display: block;
+            position: absolute;
+            bottom: -10px;
+          }
+        }
+      }
+    }
+  }
+}

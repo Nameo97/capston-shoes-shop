@@ -1,0 +1,47 @@
+// footer{
+//     .container{
+//         max-width: 1280px;
+//         margin: 0 auto;
+//         img{
+//             width: 100%;
+//             height:242px;
+//         }
+//     }
+// }
+
+footer{
+    margin-top: 40px;
+    
+        .top-footer{
+            background-color: $bg-footer-light-grey;
+            .container{
+                padding: 20px 0;
+                margin: auto;
+            }
+        }
+
+        .bottom-footer{
+            background-color: $bg-footer-dark-grey;
+            .container{
+                margin: auto;
+                padding: 20px 0;
+            }
+        }
+        h4{
+            @include TextFormatter($text-c-dark, $bg-c-none, $fs-footer-h4, $fw-bold);
+            text-transform: uppercase;
+        }
+        li{
+            @include TextFormatter($text-c-dark, $bg-c-none, $fs-footer-li, $fw-light);
+        }
+        p{
+            @include TextFormatter($text-c-dark, $bg-c-none, $fs-footer-p, $fw-light);
+
+        }
+
+        a{
+            @include TextFormatter($text-c-a, $bg-c-none, $fs-footer-li, $fw-semi-bold);
+
+        }
+    
+}

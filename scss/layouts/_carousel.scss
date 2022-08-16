@@ -1,0 +1,53 @@
+.carousel {
+    .container{
+        padding-bottom: 50px;
+        background-image: url("../img/image_6.png");
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+
+        .carousel-indicators{
+            position: absolute;
+            top: 325px;
+            li{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 1px solid rgba(0, 0, 0, 0.13);
+            }
+        }
+
+        // .item-img {
+        //     position: absolute;
+        //     top: 5px;
+        //     left: 86px;
+        // }
+
+        .product{
+            position: absolute;
+            right: 59px;
+            top: 124px;
+            bottom: 355px;
+            h1{
+                @include TextFormatter($text-c-dark, $bg-c-none, $fs-carousel-h1, $fw-semi-bold);
+            }
+            p{
+                @include TextFormatter($text-c-dark, $bg-c-none, $fs-carousel-p, $fw-light);
+            }
+        }
+
+        .left-arrow {
+            position: absolute;
+            top: 175px;
+            left: 18px;
+            bottom: 288px;
+        }
+
+        .right-arrow{
+            position: absolute;
+            top: 175px;
+            right: 18px;
+            bottom: 288px;
+        }
+    }
+}

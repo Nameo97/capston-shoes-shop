@@ -1,0 +1,19 @@
+
+
+.backToTop{
+    font-size: 30px;
+    position: absolute;
+    right: 87px;
+    bottom: 22px;
+    position:fixed;
+
+    visibility: hidden;
+    opacity: 0;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  

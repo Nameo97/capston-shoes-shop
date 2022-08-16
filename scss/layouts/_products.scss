@@ -1,0 +1,97 @@
+.featured-product {
+  margin-top: 30px;
+  .container {
+    padding-top: 1rem;
+    h1 {
+      text-align: center;
+      font-size: $fs-product-h1;
+      font-weight: $fw-semi-bold;
+    }
+    .item-list {
+      padding-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 67px;
+
+      @media screen and (max-width: 1200px){
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 992px){
+        grid-template-columns: 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr;
+        gap: 67px;
+      }
+
+      @media screen and (max-width: 576px) {
+        grid-template-columns: 1fr;
+        gap: 67px;
+      }
+      .item {
+        background-color: $bg-item-grey;
+
+
+        .item-info {
+          padding: 0 40px !important;
+          img {
+            width: 100%;
+          }
+          h3 {
+            @include TextFormatter(
+              $text-c-dark,
+              $bg-c-none,
+              $fs-product-h3,
+              $fw-light
+            );
+          }
+          p {
+            @include TextFormatter(
+              $text-c-dark,
+              $bg-c-none,
+              $fs-product-p,
+              $fw-light
+            );
+            text-overflow: ellipsis;
+          }
+        }
+        .buy-button {
+          .buy {
+            width: 50%;
+            .link{
+              text-decoration: none;
+              color:#000000 !important;
+            }
+          }
+          p {
+            @include TextFormatter(
+              $text-c-dark,
+              $bg-item-price-grey,
+              $fs-price,
+              $fw-bold
+            );
+            text-align: center;
+            line-height: 30px;
+            width: 50%;
+            padding: 17px 30px;
+            margin-bottom: 0;
+          }
+        }
+        i.fa-heart {
+          position: absolute;
+          width: 41px;
+          height: 48px;
+          left: 45px;
+          top: 6px;
+          color: $text-c-dark;
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

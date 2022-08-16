@@ -1,0 +1,33 @@
+.btn-buy{
+    background-color: $bg-c-light-yellow;
+    color: $text-c-light;
+    padding: 13px 34px;
+    border: none;
+    line-height: 24.2px;
+    font-size: 20px;
+    font-weight: $fw-light;
+}
+
+.btn-buy-dark {
+    background-color: $bg-c-dark-yellow;
+    color: $text-c-dark;
+    padding: 17px 30px;
+    border: none;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: $fw-light;
+
+}
+
+.btn-submit {
+    
+    background-color: $bg-c-pink;
+    border: none;
+    font-size: 30px;
+    font-weight: 400;
+    color: $text-c-light;
+    padding: 6px 98px 12px 88px;
+    width: 291px;
+    height: 50px;
+    margin-top:52px;
+}

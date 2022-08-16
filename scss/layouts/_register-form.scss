@@ -1,0 +1,214 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#thongBao{
+  // position: absolute;
+  // bottom: -180px;
+  display:flex;
+  position: relative;
+  bottom:-10px;
+}
+
+.register-form {
+  @media screen and (max-width: 991.98px) {
+    h1{
+      margin: 0 auto !important;
+      width:100% !important;
+    }
+    .left,
+    .right{
+      padding: 0 85px !important;
+    }
+    // .wrapper{
+    //   margin: 0;
+    // }
+    @media screen and (max-width:767.98px){
+      .gender-input{
+        
+          flex-direction: column;
+          .input-name{
+            position: absolute;
+            left: 82px;
+            top: 165px;
+          }
+          #thongBao{
+            left:0 !important;
+          }
+          .wrapper{
+            margin-top:40px !important;
+          }
+          
+        }
+      }
+      @media screen and (max-width:575.98px){
+  
+        .wrapper{
+         
+          margin: 80px 0 0 -30px !important;
+        }
+      }
+    }
+  .container {
+    background-color: $bg-register-pink;
+    max-width: 1303px;
+    margin:0 auto;
+    
+    h1 {
+      text-align: center;
+      @include TextFormatter(
+        $text-c-dark,
+        $bg-c-none,
+        $fs-register-h1,
+        $fw-semi-bold
+      );
+      // padding-top: 30px;
+      margin:0 0 60px 504px;
+      width:0;
+      
+    }
+    .row{
+      // flex-wrap: nowrap;
+      // gap:0 99px;
+      margin-bottom: 0;
+      
+      .left{
+        padding: 0 50px 0 120px;
+        // max-width:30.126rem;
+        // padding:0;
+        
+      }
+      .right{
+        padding: 0 97px 0 72px
+        // max-width:30.126rem;
+        // padding:0;
+      }
+    }
+    .form-group {
+      // padding: 62px 120px 40px;
+      // margin: 0;
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // column-gap: 113px;
+      // gap: 33px 99px;
+      .text-box {
+        align-items: center;
+        height:56px;
+        // width:29.438rem;
+        // width:100%;
+        margin-bottom: 26px;
+        border-bottom: solid 5px $border-c-pink;
+
+        .input-name {
+          @include TextFormatter(
+            $text-c-dark,
+            $bg-c-none,
+            $fs-register-input,
+            $fw-semi-bold
+          );
+        }
+
+        input {
+          box-shadow: none;
+          font-size: 25px;
+          border: none;
+          outline: none;
+          width: 100%;
+          padding-left: 20px;
+          background-color: $bg-register-pink;
+        }
+
+        .required-field-alert {
+          @include TextFormatter($text-c-red, $bg-c-none, 20, $fw-light);
+        }
+      }
+      .gender-input {
+        // line-height:1;
+        // align-self: flex-end;
+        margin-top: 55px;
+        #thongBao{
+          position: absolute;
+          bottom: -44px;
+          left: -104px;
+        }
+        .input-name {
+          @include TextFormatter(
+            $text-c-dark,
+            $bg-c-none,
+            $fs-register-input,
+            $fw-semi-bold
+          );
+          align-self: end;
+          line-height:1;
+        }
+        .wrapper {
+          position: relative;
+          display: flex;
+          
+          .check-radio {
+            position: relative;
+            display: flex;
+
+
+            .label {
+              @include TextFormatter(
+                $text-c-dark,
+                $bg-c-none,
+                $fs-register-input,
+                $fw-semi-bold
+              );
+              // position: absolute;
+              // left:123px;
+              margin: 0 0 0 107px;
+              align-self: end;
+              display: flex;
+              line-height: 1;
+            }
+            .radio {
+              position: absolute;
+              bottom: -8px;
+              left: 0px;
+              left: -32px;
+              z-index: 20;
+              width: 100%;
+              display: inline-block;
+              height: 42px;
+              visibility: hidden;
+            }
+            .root {
+              position: absolute;
+              width: 64.42px;
+              height: 50px;
+              border-radius: 60%;
+              background-color: #d9d9d9;
+              left: 28.54px;
+              line-height: 0;
+              display: flex;
+              align-self: end;
+              bottom: -25%;
+              
+
+              &::before {
+                content: " ";
+                width: 39.25px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                left: 12px;
+                display: block;
+
+                border-radius: 60%;
+              }
+            }
+
+            .radio:checked ~ .root::before {
+              background-color: $bg-c-pink;
+            }
+            
+          }
+        }
+
+      }
+    }
+  }
+}
